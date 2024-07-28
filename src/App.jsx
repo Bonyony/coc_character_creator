@@ -15,12 +15,12 @@ function App() {
       <Suspense fallback={<Loading />}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/create">
+          <Route path="/create" element={<CharacterCreator />}>
             {/* There will probably be more routes here as I grow the project */}
           </Route>
 
           {/* Will look into the proper way to format these */}
-          <Route path="/signup" />
+          <Route path="/signup" element={<SignUp />} />
           <Route path="/signin" />
 
           <Route path="/about" element={<About />} />

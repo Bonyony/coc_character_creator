@@ -1,39 +1,40 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 const Menu = () => {
   return (
     <ul className="flex flex-row items-center gap-10 p-2 ">
       <li>
-        <a
+        <Link
           className="bg-white bg-opacity-80 hover:bg-gray-300 p-1 transition-all duration-100"
-          href="#home"
+          to="/"
         >
           Home
-        </a>
+        </Link>
       </li>
       <li>
-        <a
+        <Link
           className="bg-white bg-opacity-80 hover:bg-gray-300 p-1 transition-all duration-100"
-          href="#projects"
+          to="/create"
         >
           Create Character
-        </a>
+        </Link>
       </li>
       <li>
-        <a
+        <Link
           className="bg-white bg-opacity-80 hover:bg-gray-300 p-1 transition-all duration-100"
-          href="#skills"
+          to="/signup"
         >
           Sign-Up
-        </a>
+        </Link>
       </li>
       <li>
-        <a
+        <Link
           className="bg-white bg-opacity-80 hover:bg-gray-300 p-1 transition-all duration-100"
-          href="#about"
+          to="/about"
         >
           About
-        </a>
+        </Link>
       </li>
     </ul>
   );
@@ -43,36 +44,36 @@ const SmallMenu = () => {
   return (
     <ul className="flex flex-col items-end gap-5 mt-5 font-mono  ">
       <li>
-        <a
+        <Link
           className="bg-white hover:bg-gray-300 p-1 transition-all duration-100"
-          href="#home"
+          to="/"
         >
           Home
-        </a>
+        </Link>
       </li>
       <li>
-        <a
+        <Link
           className="bg-white hover:bg-gray-300 p-1 transition-all duration-100"
-          href="#projects"
+          to="/create"
         >
           Create Character
-        </a>
+        </Link>
       </li>
       <li>
-        <a
+        <Link
           className="bg-white hover:bg-gray-300 p-1 transition-all duration-100"
-          href="#skills"
+          to="/signup"
         >
           Sign-Up
-        </a>
+        </Link>
       </li>
       <li>
-        <a
+        <Link
           className="bg-white hover:bg-gray-300 p-1 transition-all duration-100"
-          href="#about"
+          to="/about"
         >
           About
-        </a>
+        </Link>
       </li>
     </ul>
   );

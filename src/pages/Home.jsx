@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
@@ -7,9 +8,18 @@ const Home = () => {
         Call of Cthulhu 7e Character Creator
       </h1>
       <div>
-        <ul className="flex flex-row gap-4 justify-center font-bold">
-          <li>Quickstart Character</li>
-          <li>Standard Character</li>
+        <ul className="flex flex-row gap-4 justify-center font-bold mt-5">
+          {/* Buttons for character creation BEGIN */}
+          <li>
+            <Link className="bg-stone-300 p-2 rounded-md">
+              Quickstart Character
+            </Link>
+          </li>
+          <li>
+            <Link className="bg-stone-300 p-2 rounded-md">
+              Standard Character
+            </Link>
+          </li>
         </ul>
       </div>
     </div>
