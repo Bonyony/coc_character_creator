@@ -8,7 +8,7 @@ import {
 const CharacterCreator = () => {
   return (
     <div id="main">
-      <h1 className="text-3xl mx-5 my-2 font-bold">
+      <h1 className="text-4xl mx-5 my-6 font-black">
         Create a new Investigator
       </h1>
       <InvestigatorBase />

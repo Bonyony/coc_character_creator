@@ -11,22 +11,24 @@ import About from "./pages/About";
 function App() {
   return (
     <>
-      <Navbar />
-      <Suspense fallback={<Loading />}>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/create" element={<CharacterCreator />}>
-            {/* There will probably be more routes here as I grow the project */}
-          </Route>
+      <div className="text-gray-900">
+        <Navbar />
+        <Suspense fallback={<Loading />}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/create" element={<CharacterCreator />}>
+              {/* There will probably be more routes here as I grow the project */}
+            </Route>
 
-          {/* Will look into the proper way to format these */}
-          <Route path="/signup" element={<SignUp />} />
-          <Route path="/signin" />
+            {/* Will look into the proper way to format these */}
+            <Route path="/signup" element={<SignUp />} />
+            <Route path="/signin" />
 
-          <Route path="/about" element={<About />} />
-        </Routes>
-      </Suspense>
-      <Footer />
+            <Route path="/about" element={<About />} />
+          </Routes>
+        </Suspense>
+        <Footer />
+      </div>
     </>
   );
 }

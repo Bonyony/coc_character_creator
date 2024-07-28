@@ -1,12 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import squid from "../../public/icons8-octopus-64.png";
 
 const Menu = () => {
   return (
-    <ul className="flex flex-row items-center gap-10 p-2 ">
+    <ul className="flex flex-row items-center gap-10 p-2 mt-1">
       <li>
         <Link
-          className="bg-white bg-opacity-80 hover:bg-gray-300 p-1 transition-all duration-100"
+          className="bg-white bg-opacity-80 hover:bg-slate-200 p-1 rounded-md  transition-all duration-100"
           to="/"
         >
           Home
@@ -14,7 +15,7 @@ const Menu = () => {
       </li>
       <li>
         <Link
-          className="bg-white bg-opacity-80 hover:bg-gray-300 p-1 transition-all duration-100"
+          className="bg-white bg-opacity-80 hover:bg-slate-200 p-1 rounded-md  transition-all duration-100"
           to="/create"
         >
           Create Character
@@ -22,7 +23,7 @@ const Menu = () => {
       </li>
       <li>
         <Link
-          className="bg-white bg-opacity-80 hover:bg-gray-300 p-1 transition-all duration-100"
+          className="bg-white bg-opacity-80 hover:bg-slate-200 p-1 rounded-md  transition-all duration-100"
           to="/signup"
         >
           Sign-Up
@@ -30,7 +31,7 @@ const Menu = () => {
       </li>
       <li>
         <Link
-          className="bg-white bg-opacity-80 hover:bg-gray-300 p-1 transition-all duration-100"
+          className="bg-white bg-opacity-80 hover:bg-slate-200 p-1 rounded-md  transition-all duration-100"
           to="/about"
         >
           About
@@ -42,10 +43,10 @@ const Menu = () => {
 
 const SmallMenu = () => {
   return (
-    <ul className="flex flex-col items-end gap-5 mt-5 font-mono  ">
+    <ul className="flex flex-col items-end gap-5 mt-5">
       <li>
         <Link
-          className="bg-white hover:bg-gray-300 p-1 transition-all duration-100"
+          className="bg-white hover:bg-slate-200 p-1 rounded-md  transition-all duration-100"
           to="/"
         >
           Home
@@ -53,7 +54,7 @@ const SmallMenu = () => {
       </li>
       <li>
         <Link
-          className="bg-white hover:bg-gray-300 p-1 transition-all duration-100"
+          className="bg-white hover:bg-slate-200 p-1 rounded-md  transition-all duration-100"
           to="/create"
         >
           Create Character
@@ -61,7 +62,7 @@ const SmallMenu = () => {
       </li>
       <li>
         <Link
-          className="bg-white hover:bg-gray-300 p-1 transition-all duration-100"
+          className="bg-white hover:bg-slate-200 p-1 rounded-md  transition-all duration-100"
           to="/signup"
         >
           Sign-Up
@@ -69,7 +70,7 @@ const SmallMenu = () => {
       </li>
       <li>
         <Link
-          className="bg-white hover:bg-gray-300 p-1 transition-all duration-100"
+          className="bg-white hover:bg-slate-200 p-1 rounded-md  transition-all duration-100"
           to="/about"
         >
           About
@@ -83,9 +84,13 @@ const Navbar = () => {
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <div className={`z-10  top-0 w-full  bg-slate-200 bg-opacity-80`}>
-      <div className=" flex flex-row justify-between pt-5 px-5 font-semibold text-lg">
-        <div className="w-14 h-14 bg-purple-800"></div>
+    <div className={`z-10  top-0 w-full  bg-inherit bg-opacity-80`}>
+      <div className=" flex flex-row justify-between py-3 px-5 font-semibold text-lg">
+        <img
+          className="max-w-14 max-h-14 bg-red-500 rounded-full p-2 hover:bg-indigo-500 transition-all duration-300"
+          src={squid}
+          alt="Squid Logo"
+        />
         <div className="md:hidden">
           <button
             className="p-2 rounded-md outline-none flex items-end"
@@ -95,7 +100,7 @@ const Navbar = () => {
               <div className="flex flex-col items-end">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
-                  className="w-10 h-10 bg-white hover:bg-red-400 transition-all duration-100"
+                  className="w-10 h-10 rounded-md bg-white hover:bg-red-500 transition-all duration-100"
                   viewBox="0 0 20 20"
                   fill="currentColor"
                 >
@@ -111,7 +116,7 @@ const Navbar = () => {
             ) : (
               <svg
                 xmlns="http://www.w3.org/2000/svg"
-                className="w-10 h-10 bg-white bg-opacity-55 hover:bg-purple-400 transition-all duration-100"
+                className="w-10 h-10 rounded-md bg-white bg-opacity-55 hover:bg-slate-200 transition-all duration-100"
                 fill="none"
                 viewBox="0 0 24 24"
                 stroke="currentColor"

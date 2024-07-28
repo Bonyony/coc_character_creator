@@ -11,13 +11,13 @@ const InvestigatorBase = () => {
           <label htmlFor="name">Name: </label>
           <input type="text" name="name" placeholder="Jimbo Jones" required />
           <label htmlFor="sex">Sex: </label>
-          <input type="text" />
+          <input type="text" placeholder="Male/Female/Eldritch Horror" />
           <label htmlFor="age">Age: </label>
-          <input type="number" />
+          <input type="number" min={1} />
           <label htmlFor="nationality">Nationality: </label>
-          <input type="text" />
+          <input type="text" placeholder="French" />
           <label htmlFor="residence">Residence: </label>
-          <input type="text" />
+          <input type="text" placeholder="Berlin, Germany" />
 
           {/* This will have many options and is required */}
           <label htmlFor="name">Occupation: </label>
