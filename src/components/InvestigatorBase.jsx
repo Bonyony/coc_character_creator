@@ -13,7 +13,7 @@ const InvestigatorBase = () => {
           <label htmlFor="sex">Sex: </label>
           <input type="text" placeholder="Male/Female/Eldritch Horror" />
           <label htmlFor="age">Age: </label>
-          <input type="number" min={1} />
+          <input type="number" min={1} placeholder={42} />
           <label htmlFor="nationality">Nationality: </label>
           <input type="text" placeholder="French" />
           <label htmlFor="residence">Residence: </label>

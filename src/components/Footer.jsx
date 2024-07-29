@@ -1,11 +1,42 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Home from "../pages/Home";
 
 const Footer = () => {
   return (
-    <div className="text-gray-200 p-6 bg-slate-800">
-      <h1 className="text-center font-bold ">
-        There will be useful links here eventually!
-      </h1>
+    <div className="h-auto text-gray-200 p-6 bg-slate-800 flex flex-col justify-center text-center">
+      <div
+        id="links"
+        className="flex flex-row justify-center text-center gap-5"
+      >
+        <Link
+          to={"/"}
+          className="hover:text-red-400 transition-all duration-100"
+        >
+          Home
+        </Link>
+        <Link
+          to={"/create"}
+          className="hover:text-red-400 transition-all duration-100"
+        >
+          Create Character
+        </Link>
+        <Link
+          to={"/signup"}
+          className="hover:text-red-400 transition-all duration-100"
+        >
+          Sign-up
+        </Link>
+        <Link
+          to={"/about"}
+          className="hover:text-red-400 transition-all duration-100"
+        >
+          About
+        </Link>
+      </div>
+      <div id="legal" className="text-xs">
+        <p>Cthulhu's Creator 2024</p>
+      </div>
     </div>
   );
 };

@@ -14,7 +14,7 @@ const Home = () => {
           <li>
             <Link
               to={"/create"}
-              className="bg-indigo-600 p-2 text-slate-100 rounded-md hover:bg-indigo-800 transition-all duration-100"
+              className="bg-indigo-600 p-2 text-lg text-slate-100 rounded-md hover:bg-indigo-800 transition-all duration-100"
             >
               Quickstart Character
             </Link>
@@ -22,7 +22,7 @@ const Home = () => {
           <li>
             <Link
               to={"/create"}
-              className="bg-indigo-600 p-2 text-slate-100 rounded-md hover:bg-indigo-800 transition-all duration-100"
+              className="bg-indigo-600 p-2 text-lg text-slate-100 rounded-md hover:bg-indigo-800 transition-all duration-100"
             >
               Standard Character
             </Link>
