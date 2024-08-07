@@ -12,6 +12,7 @@ const CharacterCreator = () => {
         Create a new Investigator
       </h1>
       <div className="flex flex-col justify-center">
+        {/* Use hooks which allow for interactivity between the form data, there are a few useful ones */}
         <InvestigatorBase />
         <InvestigatorStats />
         <InvestigatorSkills />
