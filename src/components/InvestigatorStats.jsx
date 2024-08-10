@@ -119,7 +119,7 @@ const InvestigatorStats = () => {
         </form>
         <div id="derived-characteristics">
           <h3 className="text-xl font-bold">Derived Stats</h3>
-          <ul className="grid grid-cols-3">
+          <ul className="grid grid-cols-3 mt-4">
             <li className="font-bold">SAN: {test}</li>
             <li className="font-bold">HP: {test}</li>
             <li className="font-bold">MP: {test}</li>
