@@ -7,7 +7,7 @@ const Menu = () => {
     <ul className="flex flex-row items-center gap-10 p-2 mt-1">
       <li>
         <Link
-          className="bg-white bg-opacity-80 hover:bg-slate-200 p-1 rounded-md  transition-all duration-100"
+          className="bg-white bg-opacity-80 hover:text-indigo-600 p-1 rounded-md  transition-all duration-100"
           to="/"
         >
           Home
@@ -15,7 +15,7 @@ const Menu = () => {
       </li>
       <li>
         <Link
-          className="bg-white bg-opacity-80 hover:bg-slate-200 p-1 rounded-md  transition-all duration-100"
+          className="bg-white bg-opacity-80 hover:text-indigo-600 p-1 rounded-md  transition-all duration-100"
           to="/create"
         >
           Create Character
@@ -23,7 +23,7 @@ const Menu = () => {
       </li>
       <li>
         <Link
-          className="bg-white bg-opacity-80 hover:bg-slate-200 p-1 rounded-md  transition-all duration-100"
+          className="bg-white bg-opacity-80 hover:text-indigo-600 p-1 rounded-md  transition-all duration-100"
           to="/signup"
         >
           Sign-Up
@@ -31,7 +31,7 @@ const Menu = () => {
       </li>
       <li>
         <Link
-          className="bg-white bg-opacity-80 hover:bg-slate-200 p-1 rounded-md  transition-all duration-100"
+          className="bg-white bg-opacity-80 hover:text-indigo-600 p-1 rounded-md  transition-all duration-100"
           to="/about"
         >
           About
@@ -46,7 +46,7 @@ const SmallMenu = () => {
     <ul className="flex flex-col items-end gap-5 mt-5">
       <li>
         <Link
-          className="bg-white hover:bg-slate-200 p-1 rounded-md  transition-all duration-100"
+          className="bg-white hover:text-indigo-600 p-1 rounded-md  transition-all duration-100"
           to="/"
         >
           Home
@@ -54,7 +54,7 @@ const SmallMenu = () => {
       </li>
       <li>
         <Link
-          className="bg-white hover:bg-slate-200 p-1 rounded-md  transition-all duration-100"
+          className="bg-white hover:text-indigo-600 p-1 rounded-md  transition-all duration-100"
           to="/create"
         >
           Create Character
@@ -62,7 +62,7 @@ const SmallMenu = () => {
       </li>
       <li>
         <Link
-          className="bg-white hover:bg-slate-200 p-1 rounded-md  transition-all duration-100"
+          className="bg-white hover:text-indigo-600 p-1 rounded-md  transition-all duration-100"
           to="/signup"
         >
           Sign-Up
@@ -70,7 +70,7 @@ const SmallMenu = () => {
       </li>
       <li>
         <Link
-          className="bg-white hover:bg-slate-200 p-1 rounded-md  transition-all duration-100"
+          className="bg-white hover:text-indigo-600 p-1 rounded-md  transition-all duration-100"
           to="/about"
         >
           About

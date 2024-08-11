@@ -1,8 +1,33 @@
-import React from "react";
+import React, { useReducer } from "react";
 
 const test = "test";
 
+const randomStatRoll = () => {
+  return (Math.floor(Math.random() * 15) + 3) * 5;
+};
+
 const InvestigatorStats = () => {
+  const [rollValue, setRollValue] = useReducer(
+    (state, newState) => ({ ...state, ...newState }),
+    {
+      str: "50",
+      dex: "50",
+      int: "50",
+      con: "50",
+      app: "50",
+      pow: "50",
+      siz: "50",
+      edu: "50",
+      luck: "50",
+    }
+  );
+  const handleRoll = (e) => {
+    e.preventDefault();
+    const { name, value } = e.target;
+    console.log(randomStatRoll());
+    setRollValue({ [name]: value });
+  };
+
   return (
     <div id="characteristics" className=" bg-inherit">
       <div className="m-4 px-4">
@@ -14,6 +39,7 @@ const InvestigatorStats = () => {
                 STR:{" "}
               </label>
               <input
+                id="str"
                 type="number"
                 min={15}
                 max={90}
@@ -25,6 +51,7 @@ const InvestigatorStats = () => {
                 DEX:{" "}
               </label>
               <input
+                id="dex"
                 type="number"
                 min={15}
                 max={90}
@@ -36,6 +63,7 @@ const InvestigatorStats = () => {
                 INT:{" "}
               </label>
               <input
+                id="int"
                 type="number"
                 min={15}
                 max={90}
@@ -48,6 +76,7 @@ const InvestigatorStats = () => {
                 CON:{" "}
               </label>
               <input
+                id="con"
                 type="number"
                 min={15}
                 max={90}
@@ -59,6 +88,7 @@ const InvestigatorStats = () => {
                 APP:{" "}
               </label>
               <input
+                id="app"
                 type="number"
                 min={15}
                 max={90}
@@ -70,6 +100,7 @@ const InvestigatorStats = () => {
                 POW:{" "}
               </label>
               <input
+                id="pow"
                 type="number"
                 min={15}
                 max={90}
@@ -82,6 +113,7 @@ const InvestigatorStats = () => {
                 SIZ:{" "}
               </label>
               <input
+                id="siz"
                 type="number"
                 min={15}
                 max={90}
@@ -93,6 +125,7 @@ const InvestigatorStats = () => {
                 EDU:{" "}
               </label>
               <input
+                id="edu"
                 type="number"
                 min={15}
                 max={90}
@@ -104,6 +137,7 @@ const InvestigatorStats = () => {
                 LUCK:{" "}
               </label>
               <input
+                id="luck"
                 type="number"
                 min={15}
                 max={90}
@@ -112,7 +146,10 @@ const InvestigatorStats = () => {
             </div>
           </div>
           <div className="my-5 flex justify-center">
-            <button className="w-1/3 bg-indigo-600 py-1 min-w-20 text-lg text-slate-100 rounded-md hover:bg-indigo-800 transition-all duration-100">
+            <button
+              onClick={handleRoll}
+              className="w-1/3 bg-indigo-600 py-1 min-w-20 text-lg text-slate-100 rounded-md hover:bg-indigo-800 transition-all duration-100"
+            >
               Roll Again
             </button>
           </div>

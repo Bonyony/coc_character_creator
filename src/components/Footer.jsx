@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import squid from "../../public/icons8-octopus-64.png";
+
 import Home from "../pages/Home";
 
 const Footer = () => {
   return (
-    <div className="h-auto text-gray-200 p-6 bg-slate-800 flex flex-col justify-center text-center">
+    <div className="h-auto text-gray-200  p-6 bg-slate-800 flex flex-col justify-center text-center">
       <div
         id="links"
         className="flex flex-row justify-center text-center gap-5"
@@ -34,7 +36,8 @@ const Footer = () => {
           About
         </Link>
       </div>
-      <div id="legal" className="text-xs">
+
+      <div id="legal" className="text-xs mt-3">
         <p>Cthulhu Creator 2024</p>
       </div>
     </div>
